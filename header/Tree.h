@@ -17,5 +17,5 @@ class Tree{
 		void distributeOrOverAnd();
 		void renameVariablesApartInClauses();
 		void print(); //print sentence
-}
+};
 #endif

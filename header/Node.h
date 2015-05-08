@@ -8,17 +8,17 @@
 */
 //include
 
-#indef Node_h
+#ifndef Node_h
 #define Node_h
 
-#incldue "Quantifier.h"
+#include "Quantifier.h"
 #include "Connective.h"
 #include "Predicate.h"
 
 class Node {
 public :
 	Node* left;
-	Node* right
+	Node* right;
 	Node* parent;
 	bool isNot;
 	Quantifier* listQuantifier;

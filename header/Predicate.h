@@ -13,7 +13,7 @@ class Predicate{
 		bool isNot;
 		//construction - destroy - copy
 		Predicate();
-		Predicate(String strPredicate);
+		Predicate(string strPredicate);
 		~Predicate();
 		//Redefine operators
 		Predicate& operator=(const Predicate&);

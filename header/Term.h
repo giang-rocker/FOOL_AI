@@ -18,7 +18,7 @@ enum TermType {
 	VARIABLE,
 	CONSTANT,
 	FUNCTION
-}
+};
 
 class Term {
 public:

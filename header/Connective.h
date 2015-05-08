@@ -16,7 +16,7 @@ enum ConnectiveType {
 	OR,
 	IMPLIES,
 	MUTUAL_IMPLICATIONS
-}
+};
 
 class Connective {
 public :
@@ -26,7 +26,7 @@ public:
 //construction - destroy - copy
 	Connective();
 	Connective(ConnectiveType);
-	Connective(const Connectve&);
+	Connective(const Connective&);
 	Connective& operator = (const Connective&);
 
 // function
