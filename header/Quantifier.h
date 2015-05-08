@@ -5,11 +5,12 @@
 #define __QUANTIFIER_H__
 #include "Term.h"
 
+enum TypeQuantifier{FORALL,EXIST};
+	TypeQuantifier type;
+	Term variable;
 class Quantifier{
 	public:
-		enum TypeQuantifier{FORALL,EXIST};
-		TypeQuantifier type;
-		Term variable;
+
 		
 	Quantifier ();
 	Quantifier (TypeQuantifier );
