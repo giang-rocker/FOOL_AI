@@ -17,4 +17,4 @@ int tong(int n){
 		return s;
 }
 	
-
+// Giang vua comment
