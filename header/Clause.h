@@ -8,22 +8,22 @@
 */
 //include
 
-#ifndef Clause_h
-#define Clause_h
+#ifndef CLAUSE_H
+#define CLAUSE_H
 
 #include "Predicate.h"
 
 class Clause {
 public:
 // attribute
-	Predicate* listOfPredicate
+	Predicate* listOfPredicate;
 	int numOfPredicate ;
 
 //construction - destroy - copy
 	Clause ();
-	Clause(const& Clause );
+	Clause(const Clause& );
 	Clause(Predicate*);
-	Clause& operator = (const& Clause);
+	Clause& operator = (const Clause&);
 	
 	~Clause ();
 

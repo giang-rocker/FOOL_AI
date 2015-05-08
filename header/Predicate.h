@@ -4,6 +4,11 @@
 #ifndef __PREDICATE_H__
 #define __PREDICATE_H__
 
+#include <string>
+
+#include "Term.h"
+using namespace std;
+
 
 class Predicate{
 	public:

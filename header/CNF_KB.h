@@ -8,8 +8,8 @@
 */
 //include
 
-#ifndef CNK_KB_h
-#define CNF_KB_h
+#ifndef CNF_KB_H
+#define CNF_KB_H
 
 #include "Clause.h"
 
@@ -22,11 +22,11 @@ public:
 //construction - destroy - copy
 	CNF_KB();
 	CNF_KB(const CNF_KB&);
-	~CNK_KB();
+	~CNF_KB();
 	CNF_KB& operator = ( const CNF_KB&);
 
 // function
-public:
+
 
 
 

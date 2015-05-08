@@ -12,15 +12,15 @@
 #define Raw_KB_h
 
 #include "Tree.h"
-#include "Variable.h"
-#include "Predicate"
-#include "Quatifier"
+#include "Term.h"
+#include "Predicate.h"
+#include "Quantifier.h"
+#include "CNF_KB.h"
 
-struct Node* Tree;
 
 class Raw_KB {
 public:
-	Tree* listOfTree // a sentence of KB
+	Tree* listOfTree; // a sentence of KB
 	Term* listOfVariable;
 	Term* listOfQuantifier;
 	Term* listOfPredicate;
@@ -32,7 +32,7 @@ public:
 
 //construction - destroy - copy
 	Raw_KB();
-	Raw_KB (const Raw_KB&  )
+	Raw_KB (const Raw_KB&  );
 	Raw_KB& operator = (const Raw_KB&);
 	~Raw_KB();
 // function

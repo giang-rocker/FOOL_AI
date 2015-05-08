@@ -7,8 +7,8 @@
 */
 //include
 
-#ifndef Connectve_h
-#define Connective_h
+#ifndef connective_h
+#define connective_h
 
 enum ConnectiveType {
 	NOT,
