@@ -11,7 +11,7 @@
 #ifndef Term_h
 #define Term_h
 
-#include <cstring>
+#include <string>
 using namespace std;
 
 enum TermType {
@@ -32,7 +32,7 @@ public:
 	Term(TermType);
 	Term(TermType,string);
 	Term(const Term&);
-	Term& operator = (const Term);
+	Term& operator = (const Term&);
 
 // function
 	
