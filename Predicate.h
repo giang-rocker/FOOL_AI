@@ -1,5 +1,5 @@
 /*
-	Created by hdan
+	Created by hdan 
 */
 #ifndef __PREDICATE_H__
 #define __PREDICATE_H__
