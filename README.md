@@ -1,10 +1,10 @@
 Class:
-1. Predicate
+1. Tree
+2. Node
 2. Quantifer
 3. Connective
-4. Node
-5. Tree
+4. Predicate
+5. Term
+6. Raw_KB
 6. CNF_KB
-7. Raw_KB
-8. Term
-9. Sentence
+7. 8. Sentence
