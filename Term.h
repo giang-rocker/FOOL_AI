@@ -32,7 +32,7 @@ public:
 	Term(TermType);
 	Term(TermType,string);
 	Term(const Term&);
-	cosnt Term& operate= (const Term);
+	cosnt Term& operator = (const Term);
 
 // function
 	

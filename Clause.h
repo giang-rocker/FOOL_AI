@@ -11,6 +11,8 @@
 #ifndef Clause_h
 #define Clause_h
 
+#include "Predicate.h"
+
 class Clause {
 public:
 // attribute
@@ -21,7 +23,7 @@ public:
 	Clause ();
 	Clause(const& Clause );
 	Clause(Predicate*);
-	Clause& operate = (const& Clause);
+	Clause& operator = (const& Clause);
 	
 	~Clause ();
 

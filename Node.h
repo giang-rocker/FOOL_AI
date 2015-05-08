@@ -31,7 +31,7 @@ public :
 	Node(Predicate);
 	Node(Node&);
 	~Node();
-	const Node& operate= (const Node&);
+	const Node& operator = (const Node&);
 // function
 	
 	bool isConnective();

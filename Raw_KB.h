@@ -11,6 +11,11 @@
 #ifndef Raw_KB_h
 #define Raw_KB_h
 
+#include "Tree.h"
+#include "Variable.h"
+#include "Predicate"
+#include "Quatifier"
+
 class Raw_KB {
 public:
 	Tree* listOfTree // a sentence of KB
@@ -26,7 +31,7 @@ public:
 //construction - destroy - copy
 	Raw_KB();
 	Raw_KB (const Raw_KB&  )
-	Raw_KB& operate= (const Raw_KB&);
+	Raw_KB& operator = (const Raw_KB&);
 	~Raw_KB();
 // function
 	

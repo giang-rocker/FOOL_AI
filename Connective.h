@@ -27,7 +27,7 @@ public:
 	Connective();
 	Connective(ConnectiveType);
 	Connective(const Connectve&);
-	Connective& operate= (const Connective&);
+	Connective& operator = (const Connective&);
 
 // function
 	int getPriority();
