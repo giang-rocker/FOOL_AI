@@ -6,19 +6,18 @@
 #include "Term.h"
 
 enum TypeQuantifier{FORALL,EXIST};
-	TypeQuantifier type;
-	Term variable;
+
 class Quantifier{
 	public:
-
+		TypeQuantifier type;
+		Term variable;	
 		
-	Quantifier ();
-	Quantifier (TypeQuantifier );
-	Quantifier (string );
+		Quantifier ();
+		Quantifier (TypeQuantifier );
+		Quantifier (string );
  
-
 //get set
-	void setVariable (Term );
+	void setVariable (Term& );
 	
 	void print ();
 		

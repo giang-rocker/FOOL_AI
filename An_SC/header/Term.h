@@ -6,39 +6,42 @@
 	Description: Prototype of Term
 				Variable or Function or Constant
 */
-//include
-
 #ifndef Term_h
 #define Term_h
 
+#include <list>
 #include <string>
+
 using namespace std;
+
 enum TermType {
-	VARIABLE,
-	CONSTANT,
-	FUNCTION
+		VARIABLE,
+		CONSTANT,
+		FUNCTION
 };
+
 class Term {
 public:
-
-	// attribute
+	//Properties
 	TermType type;
 	string value;
- 
-//construction - destroy - copy
-	Term();
-	Term(TermType);
-	Term(TermType,string);
-	Term(const Term&);
-	Term& operator = (const Term&);
-
-// function
+	list<Term*> listOfArguments;
 	
-
-
+	//Constructors - Copy Constructor - Destructor
+	Term();
+//	Term(TermType);
+	Term(TermType,string);
+//	Term(TermType,string,Term*);
+	
+	Term(const Term&);
+	
+	~Term();
+	
+	//Operators overloading
+	Term& operator = (const Term&);
+	friend ostream& operator << (ostream&, Term&);
+	//Other methods
 };
-
-
 #endif
 
 

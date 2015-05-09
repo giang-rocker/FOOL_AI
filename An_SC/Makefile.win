@@ -4,8 +4,8 @@
 CPP      = g++.exe
 CC       = gcc.exe
 WINDRES  = windres.exe
-OBJ      = main.o Term.o
-LINKOBJ  = main.o Term.o
+OBJ      = main.o Term.o Quantifier.o Predicate.o
+LINKOBJ  = main.o Term.o Quantifier.o Predicate.o
 LIBS     = -L"C:/Program Files (x86)/Dev-Cpp/MinGW32/lib" -L"C:/Program Files (x86)/Dev-Cpp/MinGW32/mingw32/lib" -static-libstdc++ -static-libgcc
 INCS     = -I"C:/Program Files (x86)/Dev-Cpp/MinGW32/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW32/mingw32/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW32/lib/gcc/mingw32/4.8.1/include"
 CXXINCS  = -I"C:/Program Files (x86)/Dev-Cpp/MinGW32/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW32/mingw32/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW32/lib/gcc/mingw32/4.8.1/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW32/lib/gcc/mingw32/4.8.1/include/c++"
@@ -29,3 +29,9 @@ main.o: main.cpp
 
 Term.o: Term.cpp
 	$(CPP) -c Term.cpp -o Term.o $(CXXFLAGS)
+
+Quantifier.o: Quantifier.cpp
+	$(CPP) -c Quantifier.cpp -o Quantifier.o $(CXXFLAGS)
+
+Predicate.o: Predicate.cpp
+	$(CPP) -c Predicate.cpp -o Predicate.o $(CXXFLAGS)
